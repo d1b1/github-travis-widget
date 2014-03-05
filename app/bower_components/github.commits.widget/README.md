@@ -1,8 +1,7 @@
-github.travis.widget
+github.commits.widget
 =================
 
-This is a simple jQuery widget that provides branch report for branches Travis and Coveralls.io
-status. It support both private and public travis tests. 
+This is a very simple to use widget that perfect for open source projects sites. On open source project site you typically want to show how active is your development is. Namely, how many commits your project have and how often are they.
 
 Installation
 ------------
@@ -10,17 +9,17 @@ Installation
 Install bower component,
 
 ```bash
-	$ bower install github.travis.widget
+	$ bower install github.commits.widget
 ```
 
 How to use
 ----------
-Reference 'github.travis.widget.js' and containter div and place such script.
+Reference 'github.commits.widget.js' and containter div and place such script.
 
 ```html
 <script>
 	$(function() {
-		$('#github-travis-widget').githubInfoWidget(
+		$('#github-commits').githubInfoWidget(
 			{ user: 'alexanderbeletsky', repo: 'github.commits.widget', branch: 'master' });
 	});
 </script>
@@ -35,19 +34,19 @@ You might limit number commits shown in widget by providing with 'last' paramete
 ```html
 <script>
 	$(function() {
-		$('#github-travis-widget').githubInfoWidget(
-			{ user: 'visionmedia', repo: 'express', branch: 'master' });
+		$('#github-commits').githubInfoWidget(
+			{ user: 'alexanderbeletsky', repo: 'github.commits.widget', branch: 'master', last: 15 });
 	});
 </script>
 ```
 
-You can also provide a token ID for travis that will allow you to work with Travis-Pro.
+You might also limit the length of commit message, by 'limitMessageTo' parameter:
 
 ```html
 <script>
 	$(function() {
 		$('#github-commits').githubInfoWidget(
-			{ user: 'visionmedia', repo: 'express', branch: 'master', travis: { token: 'XXXX' }});
+			{ user: 'alexanderbeletsky', repo: 'trackyt.api.csharp', branch: 'master', last: 15, limitMessageTo: 30 });
 	});
 </script>
 ```

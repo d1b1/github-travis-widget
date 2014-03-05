@@ -1,0 +1,15 @@
+{
+  "name": "github.commits.widget",
+  "main": "js/github.commits.widget.js",
+  "homepage": "https://github.com/alexanderbeletsky/github.commits.widget",
+  "_release": "cc774b2156",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "cc774b21568f9e8b1e4afb4b6a4fe7a5f3d76619"
+  },
+  "_source": "git://github.com/alexanderbeletsky/github.commits.widget.git",
+  "_target": "*",
+  "_originalSource": "github.commits.widget",
+  "_direct": true
+}

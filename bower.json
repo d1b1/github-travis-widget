@@ -1,5 +1,5 @@
 {
-  "name": "github.commits.widget",
+  "name": "github.travis.widget",
   "version": "0.0.1",
-  "main": "js/github.commits.widget.js"
+  "main": "js/github.travis.widget.js"
 }
